@@ -2,7 +2,7 @@ interface Entry {
   role: string;
   company: string;
   startDate: string;
-  endDate: string;
+  endDate?: string;
   description: string;
 }
 
@@ -10,10 +10,8 @@ const entries: Entry[] = [
   {
     role: "Software Developer Intern, Web",
     company: "Nokia",
-    startDate: "Incoming May 2026",
-    endDate: "N/A",
-    description:
-      "Will be working on the Nokia NSP (Network Support Platform) website.",
+    startDate: "Inc. May 2026",
+    description: "Starting May 2026 - working on the Nokia NSP platform.",
   },
   {
     role: "Software Engineering Intern, Frontend/UI Platform",
@@ -21,23 +19,23 @@ const entries: Entry[] = [
     startDate: "Jan 2026",
     endDate: "Present",
     description:
-      "Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns, contributed to the yarn/lerna → pnpm/turborepo migration in the monorepo, improving build performance by 30%.",
+      "Contributed to the yarn/lerna → pnpm/turborepo migration in the monorepo, improving build performance by 30%. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
   },
   {
-    role: "Project Technical Lead (Full Stack)",
+    role: "Technical Project Lead (Full Stack)",
     company: "Carleton Blueprint, Technology For Non-Profits",
     startDate: "Oct 2025",
     endDate: "Present",
     description:
-      "Led a team of 4 developers to build a website for a nonprofit of 200+ members. Led architectural decisions, provided technical guidance, and developed across the entire stack.",
+      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions, provided technical guidance, and contributed to the development across the stack.",
   },
   {
-    role: "Software Developer Intern, MP Onboarding",
-    company: "House of Commons of Canada",
+    role: "Software Developer Intern, Digital Experience",
+    company: "Parliament of Canada (House of Commons)",
     startDate: "Sep 2025",
     endDate: "Dec 2025",
     description:
-      "Performed both development and debugging on the Members of Parliament (MP) Onboarding Application. Developed table views for simpler model mutations.",
+      "Built and debugged features within the Members of Parliament Onboarding Application,  including table views for simpler model mutations.",
   },
   {
     role: "Software Developer Intern",
@@ -49,11 +47,11 @@ const entries: Entry[] = [
   },
   {
     role: "Software Developer Intern, Security Accreditation",
-    company: "House of Commons of Canada",
+    company: "Parliament of Canada (House of Commons)",
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description:
-      "Worked on the Security Screening form responsible for verifying parliamentary staff candidates. Performed both development and testing that reduced client-side defects by 50%.",
+      "Developed and tested the Security Screening form for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
   },
 ];
 
@@ -73,7 +71,11 @@ export function Experience() {
             <div className="w-[80px] shrink-0 text-right pt-[3px]">
               <p className="text-xs text-muted-foreground leading-snug">
                 {entry.startDate}
-                <br />- {entry.endDate}
+                {entry.endDate && (
+                  <>
+                    <br />- {entry.endDate}
+                  </>
+                )}
               </p>
             </div>
 

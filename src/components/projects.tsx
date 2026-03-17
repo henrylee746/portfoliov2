@@ -13,7 +13,7 @@ const projects: ProjectEntry[] = [
   {
     name: "JOCA - Community Website (CUBlueprint)",
     description:
-      "Open-source community website for the Jamaican Ottawa Community Association. Includes member registration, elections voting, and recurring subscription payment integration.",
+      "Community website for the Jamaican Ottawa Community Association. Includes member registration, elections voting, and recurring billing via Stripe.",
     tags: [
       "Next.js",
       "TypeScript",
@@ -28,7 +28,7 @@ const projects: ProjectEntry[] = [
   {
     name: "RBAC Fitness Club",
     description:
-      "Fitness club management application. Includes OAuth 2.0 authentication, role-based access control, and features such as weight logging.",
+      "Fitness club management application. Includes OAuth 2.0 authentication, role-based access control, and member tracking features including weight logging.",
     tags: ["Next.js", "TypeScript", "Tailwind", "BetterAuth", "Prisma", "GCP"],
     liveUrl: "https://www.fitnessmgmt.tech/",
     githubUrl: "https://github.com/henrylee746/fitness-mgmt",
@@ -36,7 +36,7 @@ const projects: ProjectEntry[] = [
   {
     name: "Jenkins Contributor Spotlight - Open Source Contributor",
     description:
-      "Webpage that lists top contributors to the Jenkins project. Actively contributing to this project w/ merged PR's.",
+      "Webpage listing top contributors to the Jenkins project. Currently contributing to this project with merged PR's.",
     tags: ["React", "Material-UI", "Gatsby.js"],
     liveUrl: "https://contributors.jenkins.io/",
     githubUrl: "https://github.com/jenkins-infra/contributor-spotlight",

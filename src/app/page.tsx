@@ -3,11 +3,13 @@ import { Signature } from "@/components/ui/signature";
 import { RandomizedText } from "@/components/ui/randomized-text";
 import { Experience } from "@/components/experience";
 import { Projects } from "@/components/projects";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-4xl flex-col items-center justify-center py-16 pt-32 px-16 bg-white dark:bg-black sm:items-start">
+      <main className="flex min-h-screen w-full max-w-4xl flex-col items-center justify-center py-16 pt-32 px-6 md:px-16 bg-white dark:bg-black sm:items-start">
         <div className="text-2xl md:text-4xl font-medium tracking-[-.03em] flex flex-wrap items-center gap-y-2 mb-4 sm:mb-0">
           Henry&nbsp;
           <HighlightedText from="top" delay={0.2} inView={true}>
@@ -41,13 +43,23 @@ export default function Home() {
         </div>
         <Experience />
         <Projects />
-        <Signature
-          className="dark:invert-100 mt-8"
-          text="Henry L."
-          fontSize={16}
-          color="#1D1D1F"
-          inView={true}
-        />
+        <div className="flex flex-col md:flex-row justify-between items-center w-full">
+          <Signature
+            className="dark:invert-100 mt-8"
+            text="Henry L."
+            fontSize={16}
+            color="#1D1D1F"
+            inView={true}
+          />
+          <div className="flex gap-4 items-center mt-8">
+            <Link href="https://github.com/henrylee746">
+              <FaGithub className="text-2xl" />
+            </Link>
+            <Link href="https://www.linkedin.com/in/hlee750/">
+              <FaLinkedin className="text-2xl" />
+            </Link>
+          </div>
+        </div>
       </main>
     </div>
   );
