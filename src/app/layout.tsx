@@ -16,8 +16,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Henry Lee's Website V2",
-  description: "Henry Lee's Website V2",
+  title: "Henry L.",
+  description:
+    "Henry Lee's Website V2 - Carleton University Computer Science Student",
 };
 
 export default function RootLayout({
