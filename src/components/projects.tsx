@@ -29,7 +29,14 @@ const projects: ProjectEntry[] = [
     name: "RBAC Fitness Club",
     description:
       "Fitness club management application. Includes OAuth 2.0 authentication, role-based access control, and member tracking features including weight logging.",
-    tags: ["Next.js", "TypeScript", "Tailwind", "BetterAuth", "Prisma", "GCP"],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Better Auth",
+      "Prisma ORM",
+      "GCP",
+    ],
     liveUrl: "https://www.fitnessmgmt.tech/",
     githubUrl: "https://github.com/henrylee746/fitness-mgmt",
   },

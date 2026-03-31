@@ -14,15 +14,15 @@ const entries: Entry[] = [
     description: "Starting May 2026 - working on the Nokia NSP platform.",
   },
   {
-    role: "Software Engineering Intern, Frontend/UI Platform",
+    role: "Software Engineering Intern, Frontend Infrastructure",
     company: "Kinaxis",
     startDate: "Jan 2026",
     endDate: "Present",
     description:
-      "Contributed to the yarn/lerna → pnpm/turborepo migration in the monorepo, improving build performance by 30%. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
+      "Led the yarn/lerna → pnpm/turborepo migration in the monorepo, improving install times by 30% and build performance by 200%. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
   },
   {
-    role: "Technical Project Lead (Full Stack)",
+    role: "Technical Lead (Full Stack)",
     company: "Carleton Blueprint, Technology For Non-Profits",
     startDate: "Oct 2025",
     endDate: "Present",
@@ -30,7 +30,7 @@ const entries: Entry[] = [
       "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions, provided technical guidance, and contributed to the development across the stack.",
   },
   {
-    role: "Software Developer Intern, Digital Experience",
+    role: "Software Developer Intern",
     company: "Parliament of Canada (House of Commons)",
     startDate: "Sep 2025",
     endDate: "Dec 2025",
@@ -43,15 +43,15 @@ const entries: Entry[] = [
     startDate: "Sep 2024",
     endDate: "May 2025",
     description:
-      "Developed an internal tool that gave a first-time solution to the team's performance analytics. Reduced Gerrit API query time by 50-75% compared to the previous attempted solution.",
+      "Developed an internal tool to provide insights into the team's Gerrit contribution analytics. Reduced latency by 50-75% compared to the previous solution.",
   },
   {
-    role: "Software Developer Intern, Security Accreditation",
+    role: "Software Developer Intern",
     company: "Parliament of Canada (House of Commons)",
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description:
-      "Developed and tested the Security Screening form for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
+      "Developed and tested the Security Clearance Application for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
   },
 ];
 
