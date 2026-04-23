@@ -11,7 +11,7 @@ const entries: Entry[] = [
     role: "Software Developer Intern, Web",
     company: "Nokia",
     startDate: "Inc. May 2026",
-    description: "Starting May 2026 - working on the Nokia NSP platform.",
+    description: "Starting May 2026 - Web Application Development",
   },
   {
     role: "Software Engineering Intern, Frontend Infrastructure",
@@ -19,7 +19,7 @@ const entries: Entry[] = [
     startDate: "Jan 2026",
     endDate: "Present",
     description:
-      "Led the yarn/lerna → pnpm/turborepo migration in the monorepo, improving install times by 110% and build performance by 60%. Leveraged Copilot Agent Skills + Node.js scripting to build an E2E versioning +  publishing pipeline for the enterprise's UI library.",
+      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, improving CI install times by 110% and build performance by 60%. Developed Copilot Agent Skills + Node.js scripting to build an E2E versioning +  publishing pipeline for the enterprise's UI library. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
   },
   {
     role: "Technical Lead (Full Stack)",
@@ -27,7 +27,7 @@ const entries: Entry[] = [
     startDate: "Oct 2025",
     endDate: "Present",
     description:
-      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions and contributed to the development across the stack, including: Stripe integration, Strapi backend, Supabase database, and Next.js frontend.",
+      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions and development across the stack, including: Stripe integration, Strapi backend, Supabase database, and Next.js frontend.",
   },
   {
     role: "Software Developer Intern",
@@ -35,7 +35,7 @@ const entries: Entry[] = [
     startDate: "Sep 2025",
     endDate: "Dec 2025",
     description:
-      "Built and debugged features within the Members of Parliament Onboarding Application,  including table views for simpler model mutations.",
+      "Built and debugged features within the Members of Parliament Onboarding Application in ServiceNow,  including table views for simpler model mutations.",
   },
   {
     role: "Software Developer Intern",
@@ -51,7 +51,7 @@ const entries: Entry[] = [
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description:
-      "Contributed to the development and testing of the Security Clearance Application for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
+      "Contributed to the development and testing of the Security Clearance Application in ServiceNow for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
   },
 ];
 
