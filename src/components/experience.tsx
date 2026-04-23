@@ -19,7 +19,7 @@ const entries: Entry[] = [
     startDate: "Jan 2026",
     endDate: "Present",
     description:
-      "Led the yarn/lerna → pnpm/turborepo migration in the monorepo, improving install times by 30% and build performance by 200%. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
+      "Led the yarn/lerna → pnpm/turborepo migration in the monorepo, improving install times by 110% and build performance by 60%. Leveraged Copilot Agent Skills + Node.js scripting to build an E2E versioning +  publishing pipeline for the enterprise's UI library.",
   },
   {
     role: "Technical Lead (Full Stack)",
@@ -27,7 +27,7 @@ const entries: Entry[] = [
     startDate: "Oct 2025",
     endDate: "Present",
     description:
-      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions, provided technical guidance, and contributed to the development across the stack.",
+      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions and contributed to the development across the stack, including: Stripe integration, Strapi backend, Supabase database, and Next.js frontend.",
   },
   {
     role: "Software Developer Intern",
@@ -43,7 +43,7 @@ const entries: Entry[] = [
     startDate: "Sep 2024",
     endDate: "May 2025",
     description:
-      "Developed an internal tool to provide insights into the team's Gerrit contribution analytics. Reduced latency by 50-75% compared to the previous solution.",
+      "Developed an internal React/Express.js tool to provide insights into the team's Gerrit contribution analytics. Reduced latency by 50-75% compared to the previous solution.",
   },
   {
     role: "Software Developer Intern",
@@ -51,7 +51,7 @@ const entries: Entry[] = [
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description:
-      "Developed and tested the Security Clearance Application for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
+      "Contributed to the development and testing of the Security Clearance Application for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
   },
 ];
 
