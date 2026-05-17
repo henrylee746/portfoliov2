@@ -10,14 +10,15 @@ const entries: Entry[] = [
   {
     role: "Software Developer Intern, Web",
     company: "Nokia",
-    startDate: "Inc. May 2026",
-    description: "Starting May 2026 - Web Application Development",
+    startDate: "May 2026",
+    endDate: "Present",
+    description: "Network Services Platform Development - Web Application/UI",
   },
   {
     role: "Software Engineering Intern, Frontend Infrastructure",
     company: "Kinaxis",
     startDate: "Jan 2026",
-    endDate: "Present",
+    endDate: "Apr 2026",
     description:
       "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, improving CI install times by 110% and build performance by 60%. Developed Copilot Agent Skills + Node.js scripting to build an E2E versioning +  publishing pipeline for the enterprise's UI library. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
   },
@@ -25,9 +26,9 @@ const entries: Entry[] = [
     role: "Technical Lead (Full Stack)",
     company: "Carleton Blueprint, Technology For Non-Profits",
     startDate: "Oct 2025",
-    endDate: "Present",
+    endDate: "Apr 2026",
     description:
-      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions and development across the stack, including: Stripe integration, Strapi backend, Supabase database, and Next.js frontend.",
+      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions and development across the stack, including: Stripe integration, Strapi backend, Supabase/Prisma database, and Next.js frontend.",
   },
   {
     role: "Software Developer Intern",

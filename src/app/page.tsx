@@ -36,7 +36,7 @@ export default function Home() {
               delay={0.8}
             >
               I&apos;m a computer science student at Carleton University,
-              specializing in full stack development and I&apos;m interested in
+              specializing in full stack development. I&apos;m interested in
               building software that helps people live better lives.
             </RandomizedText>
           </div>

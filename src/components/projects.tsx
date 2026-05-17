@@ -40,14 +40,6 @@ const projects: ProjectEntry[] = [
     liveUrl: "https://www.fitnessmgmt.tech/",
     githubUrl: "https://github.com/henrylee746/fitness-mgmt",
   },
-  {
-    name: "Jenkins Contributor Spotlight - Open Source Contributor",
-    description:
-      "Webpage listing top contributors to the Jenkins project. Currently contributing to this project with merged PR's.",
-    tags: ["React", "Material-UI", "Gatsby.js"],
-    liveUrl: "https://contributors.jenkins.io/",
-    githubUrl: "https://github.com/jenkins-infra/contributor-spotlight",
-  },
 ];
 
 export function Projects() {
