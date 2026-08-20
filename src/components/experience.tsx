@@ -71,7 +71,7 @@ export function Experience() {
           >
             {/* Date column */}
             <div className="w-[80px] shrink-0 text-right pt-[3px]">
-              <p className="text-xs text-muted-foreground leading-snug">
+              <p className="text-[13px] text-muted-foreground leading-snug">
                 {entry.startDate}
                 {entry.endDate && (
                   <>
@@ -91,13 +91,13 @@ export function Experience() {
 
             {/* Content column */}
             <div className="flex-1 pb-1">
-              <p className="text-[13px] font-semibold text-foreground leading-snug">
+              <p className="text-sm font-semibold text-foreground leading-snug">
                 {entry.role}
               </p>
-              <p className="text-xs text-muted-foreground mt-0.5 mb-2">
+              <p className="text-[13px] text-muted-foreground mt-0.5 mb-2">
                 {entry.company}
               </p>
-              <p className="text-xs text-muted-foreground/80 leading-relaxed">
+              <p className="text-sm text-muted-foreground/80 leading-relaxed">
                 {entry.description}
               </p>
             </div>

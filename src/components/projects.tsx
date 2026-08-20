@@ -59,7 +59,7 @@ export function Projects() {
           >
             {/* Header row */}
             <div className="flex justify-between items-start mb-1.5">
-              <h3 className="text-[13px] font-semibold text-foreground">
+              <h3 className="text-sm font-semibold text-foreground">
                 {project.name}
               </h3>
               <div className="flex gap-3 shrink-0 ml-4">
@@ -68,7 +68,7 @@ export function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-[13px] text-muted-foreground hover:text-foreground transition-colors"
                   >
                     ↗ Live
                   </Link>
@@ -76,7 +76,7 @@ export function Projects() {
                 {project.githubUrl && (
                   <Link
                     href={project.githubUrl}
-                    className="text-xs text-muted-foreground hover:text-foreground transition-colors"
+                    className="text-[13px] text-muted-foreground hover:text-foreground transition-colors"
                   >
                     GitHub
                   </Link>
@@ -85,7 +85,7 @@ export function Projects() {
             </div>
 
             {/* Description */}
-            <p className="text-xs text-muted-foreground/80 leading-relaxed mb-2.5">
+            <p className="text-sm text-muted-foreground/80 leading-relaxed mb-2.5">
               {project.description}
             </p>
 
@@ -94,7 +94,7 @@ export function Projects() {
               {project.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="text-[10px] bg-muted text-muted-foreground rounded-full border border-border px-2 py-0.5"
+                  className="text-xs bg-muted text-muted-foreground rounded-full border border-border px-2 py-0.5"
                 >
                   {tag}
                 </span>
