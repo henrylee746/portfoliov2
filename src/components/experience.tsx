@@ -12,7 +12,8 @@ const entries: Entry[] = [
     company: "Nokia",
     startDate: "May 2026",
     endDate: "Present",
-    description: "Network Services Platform Development - Web Application/UI",
+    description:
+      "Delivered UAC-based RBAC for Nokia NSP License Manager with 3-tier permissions gating, forbidden UX, and HTTP/RFC 9457 error handling, supporting 1,000+ license users globally. Built and documented a reusable Incident Feed widget in a shared React library for the AIOps Command Center, including pagination, grouping, filters, and A2UI Catalog Integration. Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, unblocking CI-parity Cypress on Apple Silicon and cutting emulated local image-build time by 80-90%.",
   },
   {
     role: "Software Engineering Intern, Frontend Infrastructure",
