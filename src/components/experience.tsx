@@ -3,7 +3,7 @@ interface Entry {
   company: string;
   startDate: string;
   endDate?: string;
-  description: string;
+  description: string[];
 }
 
 const entries: Entry[] = [
@@ -12,48 +12,61 @@ const entries: Entry[] = [
     company: "Nokia",
     startDate: "May 2026",
     endDate: "Present",
-    description:
-      "Delivered RBAC for Nokia NSP License Manager with 3-tier permission gating and RFC 9457 error handling, supporting 1,000+ users globally, and a reusable Incident Feed widget for the AIOps Command Center. Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80%.",
+    description: [
+      "Delivered RBAC for Nokia NSP License Manager with 3-tier permission gating and RFC 9457 error handling, supporting 1,000+ users globally",
+      "Built a reusable Incident Feed widget for the AIOps Command Center",
+      "Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80%",
+    ],
   },
   {
     role: "Software Engineering Intern, Frontend Infrastructure",
     company: "Kinaxis",
     startDate: "Jan 2026",
     endDate: "Apr 2026",
-    description:
-      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%. Refactored base React components in the enterprise UI library for 60+ developers and automated E2E Storybook versioning + publishing with Copilot Agent Skills and Node.js, eliminating manual release steps.",
+    description: [
+      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%",
+      "Refactored base React components in the enterprise UI library for 60+ developers",
+      "Automated E2E Storybook versioning + publishing with Copilot Agent Skills and Node.js, eliminating manual release steps",
+    ],
   },
   {
     role: "Technical Lead (Full Stack)",
     company: "Carleton Blueprint, Technology For Non-Profits",
     startDate: "Oct 2025",
     endDate: "Apr 2026",
-    description:
-      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members. Architected a Better Auth + Prisma session layer, integrated Stripe checkout via Strapi/GraphQL (designed to replace manual invoicing, with ~$6,000 in projected annual billing), and migrated from Prisma Postgres to Supabase, cutting query latency by 30%.",
+    description: [
+      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members",
+      "Architected a Better Auth + Prisma session layer and integrated Stripe checkout via Strapi/GraphQL (designed to replace manual invoicing, with ~$6,000 in projected annual billing)",
+      "Migrated from Prisma Postgres to Supabase, cutting query latency by 30%",
+    ],
   },
   {
     role: "Software Developer Intern",
     company: "Parliament of Canada (House of Commons)",
     startDate: "Sep 2025",
     endDate: "Dec 2025",
-    description:
-      "Built and debugged features within the Members of Parliament Onboarding Application in ServiceNow,  including table views for simpler model mutations.",
+    description: [
+      "Built and debugged features within the Members of Parliament Onboarding Application in ServiceNow, including table views for simpler model mutations",
+    ],
   },
   {
     role: "Software Developer Intern",
     company: "Ericsson",
     startDate: "Sep 2024",
     endDate: "May 2025",
-    description:
-      "Designed and built the team's first performance analytics dashboard from scratch, surfacing commit bottlenecks that improved sprint planning visibility for 20+ developers. Structured the Node.js/Gerrit API integration with automated Bash/Python scripts, reducing query time by 50-75%.",
+    description: [
+      "Designed and built the team's first performance analytics dashboard from scratch, surfacing commit bottlenecks that improved sprint planning visibility for 20+ developers",
+      "Structured the Node.js/Gerrit API integration with automated Bash/Python scripts, reducing query time by 50-75%",
+    ],
   },
   {
     role: "Software Developer Intern",
     company: "Parliament of Canada (House of Commons)",
     startDate: "Jan 2024",
     endDate: "Apr 2024",
-    description:
-      "Contributed to the development and testing of the Security Clearance Application in ServiceNow for verifying parliamentary staff candidates, reducing client-side defects by 50%.",
+    description: [
+      "Contributed to the development and testing of the Security Clearance Application in ServiceNow for verifying parliamentary staff candidates, reducing client-side defects by 50%",
+    ],
   },
 ];
 
@@ -97,9 +110,11 @@ export function Experience() {
               <p className="text-[13px] text-muted-foreground mt-0.5 mb-2">
                 {entry.company}
               </p>
-              <p className="text-sm text-muted-foreground/80 leading-relaxed">
-                {entry.description}
-              </p>
+              <ul className="list-disc pl-4 space-y-1 text-sm text-muted-foreground/80 leading-relaxed">
+                {entry.description.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
