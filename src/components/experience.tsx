@@ -14,7 +14,7 @@ const entries: Entry[] = [
     endDate: "Present",
     description: [
       "Delivered RBAC for Nokia NSP License Manager with 3-tier permission gating and RFC 9457 error handling, supporting 1,000+ users globally",
-      "Built a reusable Incident Feed widget for the A2UI catalog and AIOps Command Center",
+      "Built a reusable Incident Feed widget for the A2UI catalog and AIOps Command Center, standardizing incident triage UI for the AIOps Command Center",
       "Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80%",
     ],
   },
@@ -25,7 +25,7 @@ const entries: Entry[] = [
     endDate: "Apr 2026",
     description: [
       "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%",
-      "Refactored base React components in the enterprise UI library for 60+ developers",
+      "Refactored base React components in the enterprise UI library, supporting 60+ developers to build consistent interfaces across the Maestro platform",
       "Automated E2E Storybook versioning + publishing with Copilot Agent Skills and Node.js, eliminating manual release steps",
     ],
   },
@@ -37,7 +37,7 @@ const entries: Entry[] = [
     description: [
       "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members",
       "Architected a Better Auth + Prisma session layer and integrated Stripe checkout via Strapi/GraphQL (designed to replace manual invoicing, with ~$6,000 in projected annual billing)",
-      "Migrated from Prisma Postgres to Supabase, cutting query latency by 30%",
+      "Migrated the storage from Prisma Postgres to Supabase (ca-central-1) with connection pooling, co-locating data with Canadian users to reduce query latency",
     ],
   },
   {
