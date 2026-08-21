@@ -29,7 +29,7 @@ const entries: Entry[] = [
     startDate: "Oct 2025",
     endDate: "Apr 2026",
     description:
-      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members. Architected Better Auth with Prisma, integrated Stripe via Strapi/GraphQL (~$6,000 estimated annual billing), and migrated from Prisma Postgres to Supabase, reducing query latency by 30%.",
+      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members. Architected a Better Auth + Prisma session layer, integrated Stripe checkout via Strapi/GraphQL (designed to replace manual invoicing, with ~$6,000 in projected annual billing), and migrated from Prisma Postgres to Supabase, cutting query latency by 30%.",
   },
   {
     role: "Software Developer Intern",
