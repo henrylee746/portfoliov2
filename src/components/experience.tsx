@@ -21,7 +21,7 @@ const entries: Entry[] = [
     startDate: "Jan 2026",
     endDate: "Apr 2026",
     description:
-      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%. Refactored multiple base React components in the enterprise UI library to reduce design drift, supporting 60+ developers across the Maestro platform. Automated E2E versioning + publishing for the enterprise Storybook library across 3 UI packages using Copilot Agent Skills and Node.js, eliminating manual release steps.",
+      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%. Refactored base React components in the enterprise UI library for 60+ developers and automated E2E Storybook versioning + publishing with Copilot Agent Skills and Node.js, eliminating manual release steps.",
   },
   {
     role: "Technical Lead (Full Stack)",
@@ -29,7 +29,7 @@ const entries: Entry[] = [
     startDate: "Oct 2025",
     endDate: "Apr 2026",
     description:
-      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members. Architected Better Auth session management with Prisma and integrated Stripe payments via Strapi/GraphQL, supporting checkout across the member base (~$6,000 estimated annual billing). Migrated the database from Prisma Postgres to Supabase with connection pooling, reducing query latency by 30%.",
+      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members. Architected Better Auth with Prisma, integrated Stripe via Strapi/GraphQL (~$6,000 estimated annual billing), and migrated from Prisma Postgres to Supabase, reducing query latency by 30%.",
   },
   {
     role: "Software Developer Intern",
