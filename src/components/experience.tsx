@@ -1,3 +1,8 @@
+"use client";
+
+import { useState } from "react";
+import { cn } from "@/lib/utils";
+
 interface Entry {
   role: string;
   company: string;
@@ -70,6 +75,101 @@ const entries: Entry[] = [
   },
 ];
 
+function ChevronIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={className}
+      aria-hidden="true"
+    >
+      <path d="M4 6.5 8 10.5 12 6.5" />
+    </svg>
+  );
+}
+
+function ExperienceItem({
+  entry,
+  index,
+  isLast,
+  defaultOpen,
+}: {
+  entry: Entry;
+  index: number;
+  isLast: boolean;
+  defaultOpen: boolean;
+}) {
+  const [open, setOpen] = useState(defaultOpen);
+  const panelId = `experience-panel-${index}`;
+
+  return (
+    <div className="flex items-stretch gap-5">
+      <div className="w-[80px] shrink-0 text-right pt-[3px]">
+        <p className="text-[13px] text-muted-foreground leading-snug">
+          {entry.startDate}
+          {entry.endDate ? (
+            <>
+              <br />- {entry.endDate}
+            </>
+          ) : null}
+        </p>
+      </div>
+
+      <div className="w-4 shrink-0 flex flex-col items-center">
+        <div className="w-[7px] h-[7px] rounded-full bg-muted-foreground/40 shrink-0 mt-[3px]" />
+        {isLast ? null : <div className="w-px flex-1 bg-border mt-1" />}
+      </div>
+
+      <div className={cn("flex-1 min-w-0", isLast ? "pb-1" : "pb-6")}>
+        <button
+          type="button"
+          aria-expanded={open}
+          aria-controls={panelId}
+          onClick={() => setOpen((value) => !value)}
+          className="group w-full text-left flex items-start justify-between gap-3 rounded-sm cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring/60"
+        >
+          <div className="min-w-0">
+            <p className="text-sm font-semibold text-foreground leading-snug">
+              {entry.role}
+            </p>
+            <p className="text-[13px] text-muted-foreground mt-0.5">
+              {entry.company}
+            </p>
+          </div>
+          <ChevronIcon
+            className={cn(
+              "size-4 shrink-0 mt-0.5 text-muted-foreground/70 transition-transform duration-300 ease-out group-hover:text-foreground",
+              open && "rotate-180",
+            )}
+          />
+        </button>
+
+        <div
+          id={panelId}
+          role="region"
+          className={cn(
+            "grid transition-[grid-template-rows] duration-300 ease-out",
+            open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+          )}
+        >
+          <div className="overflow-hidden min-h-0">
+            <ul className="list-disc pl-4 space-y-1 text-sm text-muted-foreground/80 leading-relaxed mt-2">
+              {entry.description.map((bullet) => (
+                <li key={bullet}>{bullet}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function Experience() {
   return (
     <section className="w-full mt-8">
@@ -78,45 +178,13 @@ export function Experience() {
       </h2>
       <div>
         {entries.map((entry, index) => (
-          <div
-            key={`${entry.company}-${index}`}
-            className="flex items-stretch gap-5 pb-9"
-          >
-            {/* Date column */}
-            <div className="w-[80px] shrink-0 text-right pt-[3px]">
-              <p className="text-[13px] text-muted-foreground leading-snug">
-                {entry.startDate}
-                {entry.endDate && (
-                  <>
-                    <br />- {entry.endDate}
-                  </>
-                )}
-              </p>
-            </div>
-
-            {/* Connector column */}
-            <div className="w-4 shrink-0 flex flex-col items-center">
-              <div className="w-[7px] h-[7px] rounded-full bg-muted-foreground/40 shrink-0 mt-[3px]" />
-              {index !== entries.length - 1 && (
-                <div className="w-px flex-1 bg-border mt-1" />
-              )}
-            </div>
-
-            {/* Content column */}
-            <div className="flex-1 pb-1">
-              <p className="text-sm font-semibold text-foreground leading-snug">
-                {entry.role}
-              </p>
-              <p className="text-[13px] text-muted-foreground mt-0.5 mb-2">
-                {entry.company}
-              </p>
-              <ul className="list-disc pl-4 space-y-1 text-sm text-muted-foreground/80 leading-relaxed">
-                {entry.description.map((bullet) => (
-                  <li key={bullet}>{bullet}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
+          <ExperienceItem
+            key={`${entry.company}-${entry.startDate}`}
+            entry={entry}
+            index={index}
+            isLast={index === entries.length - 1}
+            defaultOpen={index === 0}
+          />
         ))}
       </div>
     </section>
