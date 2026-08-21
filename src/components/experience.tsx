@@ -13,7 +13,7 @@ const entries: Entry[] = [
     startDate: "May 2026",
     endDate: "Present",
     description:
-      "Delivered UAC-based RBAC for Nokia NSP License Manager, supporting 1,000+ users globally, and a reusable Incident Feed widget for the AIOps Command Center. Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80-90%.",
+      "Delivered RBAC for Nokia NSP License Manager with 3-tier permission gating and RFC 9457 error handling, supporting 1,000+ users globally, and a reusable Incident Feed widget for the AIOps Command Center. Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80%.",
   },
   {
     role: "Software Engineering Intern, Frontend Infrastructure",
@@ -21,7 +21,7 @@ const entries: Entry[] = [
     startDate: "Jan 2026",
     endDate: "Apr 2026",
     description:
-      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, improving CI install times by 110% and build performance by 60%. Developed Copilot Agent Skills + Node.js scripting to build an E2E versioning +  publishing pipeline for the enterprise's UI library. Refactored multiple base React components in the enterprise's UI library to support consistent interface patterns.",
+      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%. Refactored multiple base React components in the enterprise UI library to reduce design drift, supporting 60+ developers across the Maestro platform. Automated E2E versioning + publishing for the enterprise Storybook library across 3 UI packages using Copilot Agent Skills and Node.js, eliminating manual release steps.",
   },
   {
     role: "Technical Lead (Full Stack)",
@@ -29,7 +29,7 @@ const entries: Entry[] = [
     startDate: "Oct 2025",
     endDate: "Apr 2026",
     description:
-      "Technical lead for a team of 4, delivering a full-stack platform for a nonprofit of 200+ members. Led architectural decisions and development across the stack, including: Stripe integration, Strapi backend, Supabase/Prisma database, and Next.js frontend.",
+      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members. Architected Better Auth session management with Prisma and integrated Stripe payments via Strapi/GraphQL, supporting checkout across the member base (~$6,000 estimated annual billing). Migrated the database from Prisma Postgres to Supabase with connection pooling, reducing query latency by 30%.",
   },
   {
     role: "Software Developer Intern",
@@ -45,7 +45,7 @@ const entries: Entry[] = [
     startDate: "Sep 2024",
     endDate: "May 2025",
     description:
-      "Developed an internal React/Express.js tool to provide insights into the team's Gerrit contribution analytics. Reduced latency by 50-75% compared to the previous solution.",
+      "Designed and built the team's first performance analytics dashboard from scratch, surfacing commit bottlenecks that improved sprint planning visibility for 20+ developers. Structured the Node.js/Gerrit API integration with automated Bash/Python scripts, reducing query time by 50-75%.",
   },
   {
     role: "Software Developer Intern",
