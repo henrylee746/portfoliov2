@@ -24,7 +24,7 @@ const entries: Entry[] = [
     ],
   },
   {
-    role: "Software Engineering Intern, Frontend Infrastructure",
+    role: "Software Engineer Intern, Frontend Infrastructure",
     company: "Kinaxis",
     startDate: "Jan 2026",
     endDate: "Apr 2026",
@@ -55,7 +55,7 @@ const entries: Entry[] = [
     ],
   },
   {
-    role: "Software Developer Intern",
+    role: "Software Engineer Intern",
     company: "Ericsson",
     startDate: "Sep 2024",
     endDate: "May 2025",
