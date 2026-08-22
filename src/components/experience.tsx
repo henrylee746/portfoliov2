@@ -19,7 +19,7 @@ const entries: Entry[] = [
     endDate: "Present",
     description: [
       "Delivered RBAC for Nokia NSP License Manager with 3-tier permission gating and RFC 9457 error handling, supporting 1,000+ users globally",
-      "Built a reusable Incident Feed widget for the A2UI catalog and AIOps Command Center, standardizing incident triage UI for the AIOps Command Center",
+      "Built a reusable Incident Feed widget for the A2UI catalog, standardizing incident triage UI for the AIOps Command Center",
       "Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80%",
     ],
   },
