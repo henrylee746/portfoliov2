@@ -13,7 +13,7 @@ interface Entry {
 
 const entries: Entry[] = [
   {
-    role: "Software Developer Intern, Web",
+    role: "Software Developer Intern, Web/Tooling",
     company: "Nokia",
     startDate: "May 2026",
     endDate: "Present",
@@ -24,7 +24,7 @@ const entries: Entry[] = [
     ],
   },
   {
-    role: "Software Engineer Intern, Frontend Infrastructure",
+    role: "Software Developer Intern, Frontend Infrastructure",
     company: "Kinaxis",
     startDate: "Jan 2026",
     endDate: "Apr 2026",
@@ -55,7 +55,7 @@ const entries: Entry[] = [
     ],
   },
   {
-    role: "Software Engineer Intern",
+    role: "Software Developer Intern",
     company: "Ericsson",
     startDate: "Sep 2024",
     endDate: "May 2025",
