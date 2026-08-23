@@ -24,7 +24,7 @@ const entries: Entry[] = [
     ],
   },
   {
-    role: "Software Developer Intern, Frontend Infrastructure",
+    role: "Software Developer Intern, Frontend + Build Tooling Infrastructure",
     company: "Kinaxis",
     startDate: "Jan 2026",
     endDate: "Apr 2026",
