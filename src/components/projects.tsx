@@ -26,19 +26,19 @@ const projects: ProjectEntry[] = [
     githubUrl: "https://github.com/Carleton-Blueprint/JOCA",
   },
   {
-    name: "RBAC Fitness Club",
+    name: "Fitness Club",
     description:
-      "Fitness club management application. Includes OAuth 2.0 authentication, role-based access control, and member tracking features including weight logging.",
-    tags: [
-      "Next.js",
-      "TypeScript",
-      "TailwindCSS",
-      "Better Auth",
-      "Prisma ORM",
-      "GCP",
-    ],
+      "Normalized PostgreSQL schema with 12 entities, composite indexes, cascade deletes, and a database view for member metrics through Prisma. Core Web Vitals under 1.9s LCP and 16ms INP using server components.",
+    tags: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "GCP", "Vercel"],
     liveUrl: "https://www.fitnessmgmt.tech/",
     githubUrl: "https://github.com/henrylee746/fitness-mgmt",
+  },
+  {
+    name: "Jenkins Contributor Spotlight",
+    description:
+      "Four pull requests to the Jenkins Contributor Spotlight app, fixing React list keys, a typography prop, decorative-icon accessibility, and a contributor location.",
+    tags: ["React", "JavaScript"],
+    githubUrl: "https://github.com/jenkins-infra/contributor-spotlight",
   },
 ];
 

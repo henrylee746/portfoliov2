@@ -18,9 +18,9 @@ const entries: Entry[] = [
     startDate: "May 2026",
     endDate: "Present",
     description: [
-      "Delivered RBAC for Nokia NSP License Manager with 3-tier permission gating and RFC 9457 error handling, supporting 1,000+ users globally",
-      "Built a reusable Incident Feed widget for the A2UI catalog, standardizing incident triage UI for the AIOps Command Center",
-      "Led a Node 24 CI/toolchain migration across 20+ shared UI packages and published native arm64 Cypress images, cutting local image-build time by 80%",
+      "Delivered 3-tier RBAC (read / write / execute) for Nokia NSP License Manager, with a no-access forbidden state and RFC 9457 error handling, verified in lab against admin, read-only, and no-access roles",
+      "Built a reusable Incident Feed widget (list, grouping, filters, dashlet) in a shared React library and registered it in the AIOps catalog so the dashboard and AI GUI share one incident UI",
+      "Shipped AI GUI catalog and chat UX (composer Stop, in-chat widget deep-links, card and chart layout fixes), moved 7 shared UI libraries from Node 22 to 24, and published native arm64 and amd64 Cypress images",
     ],
   },
   {
@@ -30,8 +30,8 @@ const entries: Entry[] = [
     endDate: "Apr 2026",
     description: [
       "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%",
-      "Refactored base React components in the enterprise UI library, supporting 60+ developers to build consistent interfaces across the Maestro platform",
-      "Automated E2E Storybook versioning + publishing with Copilot Agent Skills and Node.js, eliminating manual release steps",
+      "Refactored base React components in the enterprise-wide UI library, supporting 60+ developers to build consistent interfaces across the Maestro platform",
+      "Automated versioning and publishing for the enterprise Storybook library across 3 UI packages, eliminating manual release steps",
     ],
   },
   {
@@ -40,9 +40,9 @@ const entries: Entry[] = [
     startDate: "Oct 2025",
     endDate: "Apr 2026",
     description: [
-      "Technical lead for a team of 5, delivering a full-stack Next.js platform for a nonprofit of 200+ members",
-      "Architected a Better Auth + Prisma session layer and integrated Stripe checkout via Strapi/GraphQL (designed to replace manual invoicing, with ~$6,000 in projected annual billing)",
-      "Migrated the storage from Prisma Postgres to Supabase (ca-central-1) with connection pooling, co-locating data with Canadian users to reduce query latency",
+      "Directed a 5-person team shipping a Next.js app for a 200+ member nonprofit",
+      "Shipped Better Auth/Prisma sessions and Stripe checkout via Strapi/GraphQL, with $6,000+ in projected annual billing",
+      "Migrated Prisma Postgres to Supabase (ca-central-1) with connection pooling, reducing query latency and resolving HMR connection exhaustion",
     ],
   },
   {
@@ -51,7 +51,7 @@ const entries: Entry[] = [
     startDate: "Sep 2025",
     endDate: "Dec 2025",
     description: [
-      "Built and debugged features within the Members of Parliament Onboarding Application in ServiceNow, including table views for simpler model mutations",
+      "Built MP Onboarding features on ServiceNow, including table views for simpler model mutations",
     ],
   },
   {
@@ -60,8 +60,8 @@ const entries: Entry[] = [
     startDate: "Sep 2024",
     endDate: "May 2025",
     description: [
-      "Designed and built the team's first performance analytics dashboard from scratch, surfacing commit bottlenecks that improved sprint planning visibility for 20+ developers",
-      "Structured the Node.js/Gerrit API integration with automated Bash/Python scripts, reducing query time by 50-75%",
+      "Designed and built the team's first performance analytics dashboard from scratch, selected the stack, and surfaced commit bottlenecks that improved sprint planning visibility for 20+ developers",
+      "Structured the Node.js/Gerrit API integration with automated Bash/Python scripts, reducing query time by 50–75% and improving dashboard responsiveness",
     ],
   },
   {
@@ -70,7 +70,7 @@ const entries: Entry[] = [
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description: [
-      "Contributed to the development and testing of the Security Clearance Application in ServiceNow for verifying parliamentary staff candidates, reducing client-side defects by 50%",
+      "Developed and tested the Security Clearance application, reducing client-side defects by 50%",
     ],
   },
 ];
