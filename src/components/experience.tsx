@@ -13,36 +13,36 @@ interface Entry {
 
 const entries: Entry[] = [
   {
-    role: "Software Developer Intern, Web/Tooling",
+    role: "Software Developer Intern",
     company: "Nokia",
     startDate: "May 2026",
     endDate: "Present",
     description: [
-      "Delivered 3-tier RBAC (read / write / execute) for Nokia NSP License Manager, with a no-access forbidden state and RFC 9457 error handling, verified in lab against admin, read-only, and no-access roles",
-      "Built a reusable Incident Feed widget (list, grouping, filters, dashlet) in a shared React library and registered it in the AIOps catalog so the dashboard and AI GUI share one incident UI",
-      "Shipped AI GUI catalog and chat UX (composer Stop, in-chat widget deep-links, card and chart layout fixes), moved 7 shared UI libraries from Node 22 to 24, and published native arm64 and amd64 Cypress images",
+      "Delivered 3-tier RBAC for the NSP License Manager, implementing read/write/execute permission gating and RFC 9457 error handling for 1,000+ license users globally",
+      "Built a reusable Incident Feed component (list, grouping, filtering) in the shared React library and A2UI catalog, standardizing incident triage UI for the AIOps Command Center",
+      "Shipped streaming-chat UX for LLM responses in the AI GUI, including a Stop control in the composer and in-chat deep links to widgets, and fixed card/chart layout issues",
+      "Upgraded 7 shared UI libraries from Node 22 to 24 and published native arm64/amd64 Cypress images, removing emulation for Apple Silicon and CI and cutting local image-build time by 80%",
     ],
   },
   {
-    role: "Software Developer Intern, Frontend + Build Tooling Infrastructure",
+    role: "Software Developer Intern",
     company: "Kinaxis",
     startDate: "Jan 2026",
     endDate: "Apr 2026",
     description: [
-      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and improving build performance by 60%",
-      "Refactored base React components in the enterprise-wide UI library, supporting 60+ developers to build consistent interfaces across the Maestro platform",
-      "Automated versioning and publishing for the enterprise Storybook library across 3 UI packages, eliminating manual release steps",
+      "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and build times by 60%",
+      "Refactored base React components in the enterprise UI library used by 60+ developers, improving API consistency and test coverage across the core product",
+      "Automated versioning and publishing for the Storybook library across 3 UI packages, ending manual releases",
     ],
   },
   {
-    role: "Technical Lead (Full Stack)",
-    company: "Carleton Blueprint, Technology For Non-Profits",
+    role: "Technical Lead (Volunteer)",
+    company: "Carleton Blueprint",
     startDate: "Oct 2025",
     endDate: "Apr 2026",
     description: [
-      "Directed a 5-person team shipping a Next.js app for a 200+ member nonprofit",
-      "Shipped Better Auth/Prisma sessions and Stripe checkout via Strapi/GraphQL, with $6,000+ in projected annual billing",
-      "Migrated Prisma Postgres to Supabase (ca-central-1) with connection pooling, reducing query latency and resolving HMR connection exhaustion",
+      "Led a 5-person team building a Next.js membership platform for a 200+ member nonprofit, owning architecture decisions and code review, and implemented Better Auth/Prisma auth with Stripe checkout via Strapi/GraphQL",
+      "Migrated Prisma Postgres to Supabase with connection pooling, co-locating data with Canadian users to cut query latency and fix dev-server connection exhaustion",
     ],
   },
   {
@@ -51,7 +51,7 @@ const entries: Entry[] = [
     startDate: "Sep 2025",
     endDate: "Dec 2025",
     description: [
-      "Built MP Onboarding features on ServiceNow, including table views for simpler model mutations",
+      "Built MP Onboarding features on ServiceNow, adding table views to speed up MP data processing",
     ],
   },
   {
@@ -60,8 +60,8 @@ const entries: Entry[] = [
     startDate: "Sep 2024",
     endDate: "May 2025",
     description: [
-      "Designed and built the team's first performance analytics dashboard from scratch, selected the stack, and surfaced commit bottlenecks that improved sprint planning visibility for 20+ developers",
-      "Structured the Node.js/Gerrit API integration with automated Bash/Python scripts, reducing query time by 50–75% and improving dashboard responsiveness",
+      "Designed and built the team's first performance analytics dashboard using the MERN stack, surfacing commit bottlenecks that improved sprint planning for 20+ developers",
+      "Integrated the Gerrit API via Node.js and automated Bash/Python scripts, cutting query time by 50–75%",
     ],
   },
   {
@@ -70,7 +70,7 @@ const entries: Entry[] = [
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description: [
-      "Developed and tested the Security Clearance application, reducing client-side defects by 50%",
+      "Contributed to the Security Clearance application in ServiceNow with its Automated Test Framework, cutting client-side defects by 50%",
     ],
   },
 ];

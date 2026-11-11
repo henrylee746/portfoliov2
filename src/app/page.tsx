@@ -3,7 +3,8 @@ import { Signature } from "@/components/ui/signature";
 import { RandomizedText } from "@/components/ui/randomized-text";
 import { Experience } from "@/components/experience";
 import { Projects } from "@/components/projects";
-import { FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa";
+import { EmailLink } from "@/components/email-link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Home() {
@@ -35,10 +36,10 @@ export default function Home() {
               inView={true}
               delay={0.8}
             >
-              I&apos;m a computer science student at Carleton University (3.89
-              GPA, graduating December 2027), specializing in full stack
-              development. I&apos;m interested in building software that helps
-              people live better lives.
+              I&apos;m a computer science student at Carleton University,
+              graduating December 2027, specializing in full stack development.
+              I&apos;m interested in building software that helps people live
+              better lives.
             </RandomizedText>
           </div>
         </div>
@@ -65,12 +66,7 @@ export default function Home() {
             >
               <FaLinkedin className="text-2xl" />
             </Link>
-            <Link
-              href="mailto:henry.lee746@gmail.com"
-              aria-label="Email"
-            >
-              <FaEnvelope className="text-2xl" />
-            </Link>
+            <EmailLink />
           </div>
         </div>
       </main>

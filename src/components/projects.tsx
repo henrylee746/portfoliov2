@@ -36,7 +36,7 @@ const projects: ProjectEntry[] = [
   {
     name: "Jenkins Contributor Spotlight",
     description:
-      "Four pull requests to the Jenkins Contributor Spotlight app, fixing React list keys, a typography prop, decorative-icon accessibility, and a contributor location.",
+      "Four merged pull requests to the Jenkins Contributor Spotlight open-source app.",
     tags: ["React", "JavaScript"],
     githubUrl: "https://github.com/jenkins-infra/contributor-spotlight",
   },
