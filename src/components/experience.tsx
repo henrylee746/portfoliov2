@@ -18,7 +18,7 @@ const entries: Entry[] = [
     startDate: "May 2026",
     endDate: "Present",
     description: [
-      "Delivered 3-tier RBAC for the NSP License Manager, implementing read/write/execute permission gating and RFC 9457 error handling for 1,000+ license users globally",
+      "Delivered 3-tier RBAC for the NSP License Manager, implementing read/write/execute permission gating and RFC 9457 error handling in NSP, deployed at 1,000+ network operators",
       "Built a reusable Incident Feed component (list, grouping, filtering) in the shared React library and A2UI catalog, standardizing incident triage UI for the AIOps Command Center",
       "Shipped streaming-chat UX for LLM responses in the AI GUI, including a Stop control in the composer and in-chat deep links to widgets, and fixed card/chart layout issues",
       "Upgraded 7 shared UI libraries from Node 22 to 24 and published native arm64/amd64 Cypress images, removing emulation for Apple Silicon and CI and cutting local image-build time by 80%",
@@ -31,7 +31,7 @@ const entries: Entry[] = [
     endDate: "Apr 2026",
     description: [
       "Led the yarn/lerna → pnpm/turborepo migration in the frontend monorepo, cutting CI install times by 55% and build times by 60%",
-      "Refactored base React components in the enterprise UI library used by 60+ developers, improving API consistency and test coverage across the core product",
+      "Refactored base React components in the enterprise UI library used by 60+ developers and shipped in the core product (40,000+ users), improving API consistency and test coverage",
       "Automated versioning and publishing for the Storybook library across 3 UI packages, ending manual releases",
     ],
   },
@@ -70,7 +70,7 @@ const entries: Entry[] = [
     startDate: "Jan 2024",
     endDate: "Apr 2024",
     description: [
-      "Contributed to the Security Clearance application in ServiceNow with its Automated Test Framework, cutting client-side defects by 50%",
+      "Contributed to the Security Clearance application in ServiceNow, implementing requirements from House Accreditation and cutting client-side defects by 50% with the Automated Test Framework",
     ],
   },
 ];
@@ -97,14 +97,12 @@ function ExperienceItem({
   entry,
   index,
   isLast,
-  defaultOpen,
 }: {
   entry: Entry;
   index: number;
   isLast: boolean;
-  defaultOpen: boolean;
 }) {
-  const [open, setOpen] = useState(defaultOpen);
+  const [open, setOpen] = useState(false);
   const panelId = `experience-panel-${index}`;
 
   return (
@@ -183,7 +181,6 @@ export function Experience() {
             entry={entry}
             index={index}
             isLast={index === entries.length - 1}
-            defaultOpen={index === 0}
           />
         ))}
       </div>
